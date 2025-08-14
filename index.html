@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Kim - Portfolio</title>
+    <meta name="description" content="Daniel Kim - Electrical Engineering Student at UBC specializing in VLSI, FPGA development, and digital systems design">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Daniel Kim</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Daniel Kim</h1>
+                <p class="hero-subtitle">Electrical Engineering Student at UBC</p>
+                <p class="hero-description">
+                    Specializing in VLSI systems, FPGA development, and digital systems design. 
+                    Passionate about computer architecture, hardware acceleration, and creating efficient digital solutions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm an Electrical Engineering student at the University of British Columbia with a strong focus on 
+                        digital systems design, VLSI, and FPGA development. My passion lies in computer architecture, 
+                        hardware acceleration, and creating efficient digital solutions that push the boundaries of what's possible.
+                    </p>
+                    <p>
+                        When I'm not designing circuits or optimizing pipelines, you can find me exploring new hardware 
+                        technologies, contributing to open-source projects, or sharing knowledge with the engineering community. 
+                        I believe in continuous learning and staying at the forefront of digital design innovation.
+                    </p>
+                </div>
+            </div>
+
+            <div class="skills-section">
+                <h3>Technical Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Programming Languages</h4>
+                        <ul class="skill-list">
+                            <li>ARM Assembly</li>
+                            <li>C/C++</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Hardware Description Languages</h4>
+                        <ul class="skill-list">
+                            <li>SystemVerilog</li>
+                            <li>Verilog</li>
+                            <li>VHDL</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Development Tools</h4>
+                        <ul class="skill-list">
+                            <li>Git</li>
+                            <li>Quartus</li>
+                            <li>ModelSim</li>
+                            <li>CIRCUITMAKER</li>
+                            <li>Simulink</li>
+                            <li>FPGA Development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-section">
+                <h3>Experience</h3>
+                <div class="experience-item">
+                    <div class="experience-date">Aug 2024 - April 2025</div>
+                    <div class="experience-content">
+                        <h4>Electrical Engineering Co-op at Lantic Inc.</h4>
+                        <p>Vancouver, BC</p>
+                        <ul class="experience-details">
+                            <li>Conducted detailed review and validation of AutoCAD drawings for VFD panels and MCCs, ensuring accuracy and compliance with design specifications</li>
+                            <li>Coordinated and oversaw panel installation processes</li>
+                            <li>Upgraded scale belt system by updating VFD and motor schematics, supervised installation and DeltaV commissioning, resulting in a 30% boost in system efficiency</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-section">
+                <h3>Education</h3>
+                <div class="education-item">
+                    <div class="education-date">Expected May 2027</div>
+                    <div class="education-content">
+                        <h4>University of British Columbia, Vancouver, BC</h4>
+                        <p>Bachelor of Applied Science, Electrical Engineering</p>
+                        <h5>Relevant Courses:</h5>
+                        <ul class="course-list">
+                            <li>Computer Architecture</li>
+                            <li>Introduction to VLSI Systems</li>
+                            <li>Digital Systems Design</li>
+                            <li>Computing Systems</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>ARM32 Pipelined CPU</h3>
+                    <p>Designed and implemented a 5-stage pipelined ARM32 CPU supporting 40+ real ARMv7 instructions. Achieved an average CPI of 1 through advanced pipeline optimization techniques including operand forwarding, stall control, and branch prediction. Developed a robust hazard prevention framework with integrated support for data and control hazards across decode and execute stages.</p>
+                    <div class="project-tech">
+                        <span>SystemVerilog</span>
+                        <span>Quartus</span>
+                        <span>ModelSim</span>
+                        <span>FPGA</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Click Here</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>RC4 Decryption and Cracking Engine</h3>
+                    <p>Developed a complete hardware implementation of the RC4 stream cipher including key scheduling, pseudo-random generation, and decryption using modular FSM architecture and on-chip RAM (256 x 8). Engineered a brute-force cracking engine that iteratively decrypted a 32-byte ROM message across the entire 24-bit keyspace, halting automatically upon detecting valid ASCII plaintext.</p>
+                    <div class="project-tech">
+                        <span>SystemVerilog</span>
+                        <span>Quartus</span>
+                        <span>ModelSim</span>
+                        <span>FSM</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://danielkim2374.github.io/RC4-Decryption-and-Cracking-Engine" target="_blank" class="project-link">View Live Demo</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Waveform Generator and Modulation Viewer</h3>
+                    <p>Designed and implemented a real-time digital communication system using a 5-bit LFSR and 12-bit Direct Digital Synthesizer (DDS) to generate and modulate waveforms on an FPGA. Programmed ASK and BPSK modulation schemes entirely in SystemVerilog using pseudo-random LFSR output as data stream. Developed FSK modulation in C on a NIOS II soft-core processor.</p>
+                    <div class="project-tech">
+                        <span>NIOS II</span>
+                        <span>QSYS</span>
+                        <span>C</span>
+                        <span>SystemVerilog</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Click Here</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Simple iPods</h3>
+                    <p>Designed and developed a modular Verilog-based audio system capable of real-time playback of 8-bit WAV samples at 22kHz from onboard FLASH using FSM and clock dividers. Implemented a start-finish protocol between read, address control, and clock division FSMs to ensure glitch-free and continuous audio streaming. Integrated an embedded PicoBlaze processor for real-time signal processing.</p>
+                    <div class="project-tech">
+                        <span>Verilog</span>
+                        <span>PicoBlaze</span>
+                        <span>Quartus</span>
+                        <span>Git</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Click Here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <span>📧 danielkim2374@gmail.com</span>
+                        </div>
+                        <div class="contact-method">
+                            <span>📱 604-862-2374</span>
+                        </div>
+                        <div class="contact-method">
+                            <span>💼 <a href="https://linkedin.com/in/danielkim2374" target="_blank">linkedin.com/in/danielkim2374</a></span>
+                        </div>
+                        <div class="contact-method">
+                            <span>🐙 <a href="https://github.com/ecedaniel" target="_blank">github.com/ecedaniel</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
